@@ -1,0 +1,7 @@
+.AgeDisplay {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+}
