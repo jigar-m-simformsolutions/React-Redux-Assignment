@@ -3,6 +3,8 @@ import actionType from '../Actions'
 const initialState = {
     age : 21,
     i : 0,
+    a : 1,
+    b : 1,
     confirmName : false,
     Name : '',
     result : [],
@@ -12,6 +14,16 @@ const initialState = {
 
 const reducer = (state = initialState , action) => {
     switch (action.type) {
+        case actionType.UpdateA : 
+            return {
+                ...state,
+                a : state.a + state.b   
+            }
+        case actionType.UpdateB : 
+            return {
+                ...state,
+                b : state.b + state.a   
+            }
         case actionType.NameEnter :
             var name = window.prompt('Enter Name :');
             var Confirm = window.confirm('Confirm or Deny');
