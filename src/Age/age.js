@@ -31,10 +31,10 @@ class Age extends Component {
                 </div>
                 <span>A : </span>
                 <span>{this.props.a}</span>
-                <AgeControl lable = 'Update A' clicked = {() => this.props.OnUpdateA(this.props.b)}/>
+                <AgeControl lable = 'Update A' clicked = {() => this.props.onUpdateA(this.props.b)}/>
                 <span>B : </span>
                 <span>{this.props.b}</span>
-                <AgeControl lable = 'Update B' clicked = {() => this.props.OnUpdateB(this.props.a)}/>
+                <AgeControl lable = 'Update B' clicked = {() => this.props.onUpdateB(this.props.a)}/>
                 <AgeControl lable = 'Even Age' clicked = {this.props.onEvenAge} />
                 <AgeControl lable = 'Odd Age' clicked = {this.props.onOddAge} />
                 <h4>Even Age :</h4>

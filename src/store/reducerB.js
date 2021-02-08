@@ -10,7 +10,7 @@ const reducerB = (state = initialState,action) => {
         case actionType.UpdateB : 
             return {
                 ...state,
-                a : action.a + action.b   
+                b : action.a + state.b   
             }
         default:
             break;
